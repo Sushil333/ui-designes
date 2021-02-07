@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "roboto";
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #e31b6d;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  padding: 0em 1em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 900;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1px;
+  margin: 0em 1em;
+}
+
+.subtitle {
+  font-size: 0.5em;
+}
+
+nav .link-wrap {
+  background: #fff;
+  height: 0;
+  max-width: 1200px;
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+nav .link-wrap.visible {
+  z-index: 99;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding-top: 75px;
+}
+
+nav .link-wrap div {
+  cursor: pointer;
+  font-size: 12pt;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+nav .link-wrap div:first-child {
+  padding: 25px 20px 12px 20px;
+}
+nav .link-wrap div:hover {
+  color: #e31b6d;
+}
+
+nav .mdi-menu {
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* hero section start */
+.hero-section {
+  margin-top: 3.7em;
+  height: calc(100vh - 45vh);
+}
+
+.hero-text {
+  font-family: "Staatliches", cursive;
+  font-weight: 500;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  margin: 0.2em 1em 0.8em 0em;
+}
+
+.hero-img {
+  background-repeat: no-repeat;
+  background-size: center;
+  object-fit: cover;
+  height: calc(100vh - 45vh);
+  transform: translateY(-2em);
+}
+/* hero section end */
+
+/* list lawyer section start */
+section:nth-child(3) {
+  background: #f2f2f2;
+  padding: 3em 0em 4em 0em;
+}
+
+section:nth-child(3) .heading {
+  font-size: 1.7em;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6em;
+}
+
+.list-item {
+  background: #eaeaea;
+  border-left: 5px solid #333;
+  margin-bottom: 1.2em;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 4px 5px #c3c3c3;
+  transition: background 0.3s ease;
+}
+
+.list-item:hover {
+  background: #e0e0e0;
+}
+
+.list-item::after {
+  display: none;
+}
+/* list lawyer section end */
+
+/* Contact US Sedction start */
+section:nth-child(4) {
+  background: rgba(0, 0, 0, 90%);
+  padding: 4em 0em 4em 0em;
+  color: #f2f2f2;
+}
+
+section:nth-child(4) .heading {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+form {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  /* margin: 1em; */
+}
+
+form input,
+textarea {
+  background: transparent;
+  font-size: 1rem;
+  color: #f2f2f2;
+  outline: none;
+  border: 1px solid rgb(129, 129, 129);
+  padding: 0.5em 1em;
+  margin: 0.25em 1em 1em 0em;
+  width: 100%;
+}
+
+form textarea {
+  font-size: 1.2em;
+}
+
+form label {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* Contact US Sedction end */
+
+/* footer section start */
+footer {
+  background: rgba(0, 0, 0, 95%);
+  color: #fff;
+  padding: 3em 0em;
+}
+
+footer .logo {
+  margin: 0;
+}
+
+.footer-text {
+  max-width: 500px;
+  color: grey;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+footer .ul {
+  color: #e2e2e2;
+  text-transform: uppercase;
+}
+/* footer scetion ends */
+
+/* Utilities css */
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex.row {
+  flex-direction: row;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0em 1em;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ul li {
+  margin: 0.5em;
+}
+
+/* .ul li a {
+  border-bottom: 2px solid #e2e2e2;
+  border-width: 0;
+} */
+
+
+a::after {
+  /* display: block; */
+  position: absolute;
+  top: 100%;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #e31b6d;
+  right: 0;
+  -webkit-transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02),
+    0.3s background;
+  transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02), 0.3s background;
+}
+
+a:hover:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex: 1 1;
+  gap: 1em;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Button styling */
+.nav-btn {
+  background: #000 !important;
+  color: #f2f2f2;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-btn {
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  font-weight: 500 !important;
+  padding: 0.5em 1em !important;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  padding: 0.7em 1.2em;
+}
+
+.btn:hover,
+.nav-btn:hover {
+  opacity: 0.8;
+}
+
+.btn.btn-black {
+  background: #000 !important;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 425px) {
+
+  body {
+    font-size: .8em;
+  }
+  .logo {
+    margin: 0em;
+    letter-spacing: 0;
+    font-size: 1.3em;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .list {
+    grid-template-columns: auto;
+  }
+  .col-2 {
+    flex: 1;
+    flex-direction: column;
+    gap: 0em;
+  }
+
+  form {
+    margin-top: 2.5em;
+  }
+
+  .footer-text {
+    line-height: 1.2em;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: auto;
+  }
+
+  section:nth-child(4) .heading {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  
+  .logo {
+    margin: 0em 2em;
+  }
+  nav .link-wrap {
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+  }
+  nav .link-wrap .visible {
+    height: initial;
+  }
+  nav .link-wrap div {
+    display: inline;
+    font-size: initial;
+    margin: 0 20px;
+    padding: initial;
+  }
+  nav .link-wrap div:first-child {
+    padding: 0;
+  }
+  nav .mdi-menu {
+    display: none;
+  }
+}

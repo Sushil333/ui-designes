@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            The Lawyer Station
+            <div class="subtitle">THE ESIEST WAY TO FIND LAWYER ©</div>
+        </div>
+
+        <div class="link-wrap">
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item"><a href="#">Resources</a></div>
+            <div class="nav-item"><a href="#">About Us</a></div>
+            <div class="nav-item"><a href="#">Why US?</a></div>
+        </div>
+        <div class="mdi-menu">
+            <span class="material-icons">
+                menu
+            </span>
+        </div>
+
+    </nav>
+
+    <!-- Hero Secton Start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="col-2">
+                <div>
+                    <div class="hero-text text-uppercase">
+                        The fastest, easiest, and best way to get matched to local attorneys
+                    </div>
+                    <a href="#" class="btn btn-black hero-btn">Why Choose Us?</a>
+                </div>
+                <div>
+                    <img src="image 1.png" class="hero-img" alt="lawyer" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+
+    <!-- List lawyers section start -->
+    <section>
+        <div class="container">
+            <h1 class="heading" tabindex="0">Get the best match of Lawyers in your Area</h1>
+
+            <div class="list">
+                <a href="#" class="list-item">Accident Attorneys</a>
+                <a href="#" class="list-item">Divorce Attorneys</a>
+                <a href="#" class="list-item">DUI / DWI / DWAI Attorneys</a>
+                <a href="#" class="list-item">Immigration Attorneys</a>
+                <a href="#" class="list-item">Bankruptcy Attorneys</a>
+                <a href="#" class="list-item">Domestic Violence Attorneys</a>
+                <a href="#" class="list-item">Attorneys Specializing in Drug Charges</a>
+                <a href="#" class="list-item">Workers Comp Attorneys</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- List lawyers section end -->
+
+
+    <!-- Contact us Secton Start -->
+    <section class="contactus-section">
+        <div class="container">
+            <div class="col-2">
+                <div>
+                    <h1 class="heading">Contact US</h1>
+
+                    <h3 style="margin: 2em 0em .25em 0em">Adddress</h3>
+                    <p style="margin: .25em 0em;">
+                        PO Box 398<br>
+                        Henderson, CO 80540
+                    </p>
+
+                    <h3 style="margin: 2em 0em .25em 0em">Email</h3>
+                    <p style="margin: .25em 0em;">
+                        info@TheLawyerStation.com
+                    </p>
+
+                    <h3 style="margin: 2em 0em .25em 0em">OR</h3>
+                    <p style="margin: .25em 0em;">
+                        To submit a general inquiry to The Lawyer Station,<br>
+                        please use the given form.
+                    </p>
+
+                </div>
+                <div>
+                    <form>
+                        <div class="col-2">
+                            <div>
+                                <label>First name*</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div>
+                                <label>Last name*</label><br>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div>
+                                <label>Email Address*</label><br>
+                                <input type="email" required>
+                            </div>
+                            <div>
+                                <label>Phone no:</label><br>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Comments:</label><br>
+                            <textarea rows="5" type="text" required></textarea>
+                        </div>
+
+                        <button class="btn" style="background: #e2e2e2;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact us section end -->
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="grid-col-2">
+                <div>
+                    <div class="logo">
+                        The Lawyer Station
+                        <div class="subtitle">THE ESIEST WAY TO FIND LAWYER ©</div>
+                    </div>
+
+
+                    <div class="footer-text">
+                        Our mission is to provide articles, information, and guidance for consumers on the best ways to
+                        look
+                        for
+                        and choose the right law firm, while continuing to offer attorneys ever-improving tools and
+                        top-quality
+                        leads to help them achieve success.
+                    </div>
+                </div>
+
+                <div>
+                    <h3>USEFUL LINKS</h3>
+
+                    <ul class="ul">
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Why US? </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script>
+        const menuBtn = document.querySelector('.mdi-menu')
+
+        menuBtn.addEventListener('click', () => {
+            document.querySelector('.link-wrap').classList.toggle('visible')
+        })
+    </script>
+</body>
+
+</html>
