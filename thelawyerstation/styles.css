@@ -390,6 +390,12 @@ a:hover:after {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 1.8em;
+  }
+}
+
 @media only screen and (min-width: 780px) {
   .logo {
     margin: 0em 2em;
