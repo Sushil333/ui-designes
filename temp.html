@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    
+<h1>FCM Notification Demo</h1>
+<button onclick="requestNotificationPermission()">Enable Notifications</button>
+<button id="btnGenToken">Generate FCM Token</button>
+    
 <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js'
         import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js'
